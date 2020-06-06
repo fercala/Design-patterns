@@ -16,7 +16,7 @@ El siguiente diagrama muestra como un cliente consume a travez de una interfaz, 
 - Interface: Define la interfaz común a todas las estrategias(algoritmos).
 - Estrategia n: Implmentación de un algoritmo en particular.
 
-![Strategy Diagram](https://github.com/fercala/Design-patterns/blob/master/Behavioral/Strategy/Strategy%20Diagram.png?raw=true)
+![Strategy Diagram](https://raw.githubusercontent.com/fercala/Design-patterns/master/Behavioral/Strategy/Strategy%20Diagram.png)
 
 Esto permite un desacoplameiento y de esta manera que sea mas facil de manter en el tiempo.
 También permite que puedan realizarse distintas estrategias de algoritmos para distintas sitauaciones y con un simple cambio de instancia se cambie el comportamiento.
