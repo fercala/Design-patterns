@@ -53,7 +53,7 @@ El repositorio esta dividido por tipo comportamiento, creacion y estructural.
     - Factory Method (método de fabricación)
 - [Estrucuturales](https://github.com/fercala/Design-patterns/tree/master/Structural)
     - Adapter o Wrapper (Adaptador o Envoltorio)
-    - Bridge (Puente)
+    - [Bridge (Puente)](https://github.com/fercala/Design-patterns/tree/master/Structural/Bridge) 
     - Composite (Objeto compuesto)
     - [Decorator (Decorador)](https://github.com/fercala/Design-patterns/tree/master/Structural/Decorator) 
     - Facade (Fachada)
