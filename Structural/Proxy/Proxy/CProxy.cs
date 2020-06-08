@@ -4,6 +4,11 @@ using System.Text;
 
 namespace Proxy
 {
+    /// <summary>
+    /// Haremos uso de anidadmiento adentro de la clase
+    /// Esto hace que cualquier clase colocada como privada y anidada
+    /// solo sea conocida por Cproxy
+    /// </summary>
     public class CProxy
     {
         public interface ISujeto
@@ -64,6 +69,27 @@ namespace Proxy
 
                     }
                 }
+                else
+                {
+                    Console.WriteLine("Acceso Denegado");
+                }
+            }
+        }
+
+        //Esta es la clase que estamos protegiendo con el proxy
+        private class CCocina
+        {
+            public void RecetaSecreta()
+            {
+                Console.WriteLine("Pan");
+                Console.WriteLine("Aceite de oliva");
+                Console.WriteLine("Especias");
+                Console.WriteLine("Jamon");
+                Console.WriteLine("Queso");
+            }
+            public void Cocinar(int n)
+            {
+                Console.WriteLine("Cocinando {0} recestas", n);
             }
         }
     }

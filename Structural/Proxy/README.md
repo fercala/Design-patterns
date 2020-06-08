@@ -6,10 +6,10 @@ Da soporte a objetos que controla la creación y el acceso a otros objtetos. Es 
 
 ### Tipos de proxies
 El patrón proxy se usa cuando se necesita una referencia a un objeto más flexible o sofisticada que un puntero. Dependiendo de la función que se desea realizar con dicha referencia podemos distinguir diferentes tipos de proxies:
-- proxy remoto: representante local de un objeto remoto.
-- proxy virtual: crea objetos costosos bajo demanda.
-- proxy de protección: controla el acceso al objeto original
-- proxy de referencia inteligente: sustituto de un puntero que lleva a cabo operaciones adicionales cuando se accede a un objeto (ej. contar número de referencias al objeto real, cargar un objeto persistente bajo demanda en memoria, control de concurrencia de acceso tal como bloquear el objeto para impedir acceso concurrente, …).
+- Proxy remoto: representante local de un objeto remoto. Codifica las peticiones y las envía por la red. 
+- Proxy virtual: crea objetos costosos bajo demanda. Da la creación de un objeto a otro.
+- Proxy de protección: controla el acceso al objeto original. Verifica que los permisos de acceso sean los adecuados
+- Proxy de referencia inteligente: Adiciona o modifica las peticiones antes de enviarlas. Sustituto de un puntero que lleva a cabo operaciones adicionales cuando se accede a un objeto (ej. contar número de referencias al objeto real, cargar un objeto persistente bajo demanda en memoria, control de concurrencia de acceso tal como bloquear el objeto para impedir acceso concurrente).
 
 ### Diagrama
 El siguiente diagrama muestra como el cliente hace consumo del objeto sujeto atravez del Proxy.
